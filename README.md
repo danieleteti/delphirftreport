@@ -1,6 +1,6 @@
 # RTF Reporting for Delphi (RRD for short)
 RRD is Delphi reporting engine based on RTF template. The project is still in alpha stage.
-
+No DLL’s, no ActiveX, no third party libraries dependencies, only pure native Delphi code.
 
 ## Usage guide
 ```delphi
