@@ -85,12 +85,12 @@ begin
   ds1.Open;
   ds2.Open;
 
-  for I := 1 to 100 do
+  for I := 1 to 10 do
   begin
     lName := GetRndFirstName;
     lLastName := getrndlastname;
     ds1.AppendRecord([I, lName + ' ' + lLastName, GetRndCountry]);
-    for J := 1 to Random(2) do
+    for J := 1 to Random(4) + 1 do
     begin
       ds2.AppendRecord([I * 100 + J, I, Format('%s.%s@%s.com', [lName.Substring(0, 1).ToLower,
         lLastName.ToLower, GetRndCountry.ToLower]), 'email']);
