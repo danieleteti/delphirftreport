@@ -8,7 +8,6 @@ procedure TMainForm.GenerateReport(const aReport: String);
 var
   lRTFEngine: TRTFReportEngine;
   lRTFDocument: string;
-  lOutputFileName: string;
 begin
   lRTFDocument := TFile.ReadAllText(aReport);
 
